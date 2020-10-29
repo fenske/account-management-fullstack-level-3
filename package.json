@@ -2,11 +2,17 @@
   "name": "account-management-fullstack-level-3",
   "version": "0.0.1",
   "scripts": {
-    "build:fullstack": "echo build your fullstack app here",
-    "start:fullstack": "echo start your fullstack app here",
+    "build:fullstack": "echo build your fullstack app here & next build",
+    "start:fullstack": "node_modules/.bin/account-management-api & next start",
     "test:backend": "cypress run --spec 'cypress/integration/backend.spec.js'",
     "test:frontend": "cypress run --spec 'cypress/integration/frontend.spec.js'",
     "test": "cypress run"
+  },
+  "dependencies": {
+    "@devskills/account-management-api": "^0.0.3",
+    "next": "9.5.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
     "cypress": "^5.4.0"
